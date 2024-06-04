@@ -1,0 +1,55 @@
+%% Main method to calculate the transfer function
+% Each of the following is calculated in a time window.
+
+
+% Calculation of interstation transfer function Txx
+
+Txx=(sxrxs.*syryr-sxryr.*syrxs)./(sxrxr.*syryr-sxryr.*syrxr); 
+
+% sxrxs,  syryr, sxryr, syrxs, sxrxr, syryr and syrxr is the ∫WC∆Xr∆Xs(τ)dτ, ∫WC∆Yr∆Yr(τ)dτ, ∫WC∆Xr∆Yr(τ)dτ, ∫WC∆Yr∆Xs(τ)dτ, ∫WC∆Xr∆Xr(τ)dτ, ∫WC∆Yr∆Yr(τ)dτ and ∫WC∆Yr∆Xr(τ)dτ results, respectively, as in the manuscript.
+
+
+
+
+% Calculation of interstation transfer function Txy
+
+Txy=(syrxs.*sxrxr-syrxr.*sxrxs)./(sxrxr.*syryr-sxryr.*syrxr);
+
+% syrxs,  sxrxr, syrxr, sxrxs, sxrxr, syryr and sxryr is the ∫WC∆Yr∆Xs(τ)dτ, ∫WC∆Xr∆Xr(τ)dτ, ∫WC∆Yr∆Xr(τ)dτ, ∫WC∆Xr∆Xs(τ)dτ, ∫WC∆Xr∆Xr(τ)dτ, ∫WC∆Yr∆Yr(τ)dτ and ∫WC∆Xr∆Yr(τ)dτ results, respectively, as in the manuscript.
+
+
+
+
+% Calculation of interstation transfer function Tyx
+
+Tyx=(sxrys.*syryr-sxryr.*syrys)./(sxrxr.*syryr-sxryr.*syrxr);
+
+% sxrys,  syryr, sxryr, syrys, sxrxr, syryr and sxryr is the ∫WC∆Xr∆Ys(τ)dτ, ∫WC∆Yr∆Yr(τ)dτ, ∫WC∆Xr∆Yr(τ)dτ, ∫WC∆Yr∆Ys(τ)dτ, ∫WC∆Xr∆Xr(τ)dτ, ∫WC∆Yr∆Yr(τ)dτ and ∫WC∆Xr∆Yr(τ)dτ results, respectively, as in the manuscript.
+
+
+
+
+% Calculation of interstation transfer function Tyy
+
+Tyy=(syrys.*sxrxr-syrxr.*sxrys)./(sxrxr.*syryr-sxryr.*syrxr);
+
+% syrys,  sxrxr, syrxr, sxrys, sxrxr, syryr and sxryr is the ∫WC∆Yr∆Ys(τ)dτ, ∫WC∆Xr∆Xr(τ)dτ, ∫WC∆Yr∆Xr(τ)dτ, ∫WC∆Xr∆Ys(τ)dτ, ∫WC∆Xr∆Xr(τ)dτ, ∫WC∆Yr∆Yr(τ)dτ and ∫WC∆Xr∆Yr(τ)dτ results, respectively, as in the manuscript.
+
+
+
+
+% Calculation of interstation transfer function Tzx
+
+Tzx=(sxrzs.*syryr-sxryr.*syrzs)./(sxrxr.*syryr-sxryr.*syrxr);
+
+% sxrzs,  syryr, sxryr, syrzs, sxrxr, syryr and syrxr is the ∫WC∆Xr∆Zs(τ)dτ, ∫WC∆Yr∆Yr(τ)dτ, ∫WC∆Xr∆Yr(τ)dτ, ∫WC∆Yr∆Zs(τ)dτ, ∫WC∆Xr∆Xr(τ)dτ, ∫WC∆Yr∆Yr(τ)dτ and ∫WC∆Yr∆Xr(τ)dτ results, respectively, as in the manuscript.
+
+
+
+
+
+% Calculation of interstation transfer function Tzy
+
+Tzy=(syrzs.*sxrxr-syrxr.*sxrzs)./(sxrxr.*syryr-sxryr.*syrxr);
+
+% syrzs,  sxrxr, syrxr, sxrzs, sxrxr, syryr and sxryr is the ∫WC∆Yr∆Zs(τ)dτ, ∫WC∆Xr∆Xr(τ)dτ, ∫WC∆Yr∆Xr(τ)dτ, ∫WC∆Xr∆Zs(τ)dτ, ∫WC∆Xr∆Xr(τ)dτ, ∫WC∆Yr∆Yr(τ)dτ and ∫WC∆Xr∆Yr(τ)dτ results, respectively, as in the manuscript.
